@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Content-Security-Policy can be stricter in production -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https: http: ws: wss:; media-src * blob:;">
+    <link rel="icon" type="image/jpeg" href="/icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ST TV</title>
+  </head>
+  <body class="bg-background text-white antialiased overflow-hidden select-none">
+    <div id="root" class="w-screen h-screen"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
