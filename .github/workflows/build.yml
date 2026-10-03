@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Compile Project
+        run: npm run build
+
       - name: Build Executable
         run: npx electron-builder
 
@@ -27,4 +30,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Windows-Exe
-          path: dist/*.exe
+          path: |
+            dist/*.exe
+            release/*.exe
+
